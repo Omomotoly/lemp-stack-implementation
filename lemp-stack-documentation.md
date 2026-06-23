@@ -1,17 +1,16 @@
 # WEB STACK IMPLEMENTATION (LEMP STACK) IN AWS
 
 ## Introduction
-The LEMP stack is a powerful, open-source collection of software used to develop and host high-performance web applications. Following my previous deployment of the classic LAMP stack, this project focuses on implementing its modern, high-concurrency counterpart. 💻
-
+The LEMP stack is a powerful, open-source collection of software used to develop and host high-performance web applications. Following my previous deployment of the classic LAMP stack, this project focuses on implementing its modern, high-concurrency counterpart. 
 The stack consists of four core layers working seamlessly together:
 
-* Linux (Ubuntu): The rock-solid open-source operating system serving as our base. 🐧
+* Linux (Ubuntu): The rock-solid open-source operating system serving as our base. 
 
-* Nginx (Engine-X): The high-performance web server known for its speed, stability, and low resource consumption—replacing Apache in this architecture. 🌐
+* Nginx (Engine-X): The high-performance web server known for its speed, stability, and low resource consumption—replacing Apache in this architecture. 
 
-* MySQL: The robust relational database management system handling data persistence. 🗄️
+* MySQL: The robust relational database management system handling data persistence. 
 
-* PHP: The dynamic server-side scripting language processing the application logic. ⚙️
+* PHP: The dynamic server-side scripting language processing the application logic. 
 
 This documentation breaks down the step-by-step installation, security configuration, and verification required to build a fully functional LEMP environment from scratch.
 
