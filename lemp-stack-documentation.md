@@ -6,7 +6,7 @@ The stack consists of four core layers working seamlessly together:
 
 * Linux (Ubuntu): The rock-solid open-source operating system serving as our base. 
 
-* Nginx (Engine-X): The high-performance web server known for its speed, stability, and low resource consumption—replacing Apache in this architecture. 
+* Nginx: The high-performance web server known for its speed, stability, and low resource consumption—replacing Apache in this architecture. 
 
 * MySQL: The robust relational database management system handling data persistence. 
 
