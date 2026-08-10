@@ -9,6 +9,42 @@ The LEMP stack swaps out the traditional Apache web server for Nginx, prioritizi
 *   **Database:** MySQL 
 *   **Scripting Language:** PHP 
 
+```
+  ┌─────────────────────────────────────┐
+  │              Browser                 │
+  │  (User Request: example.com)         │
+  └─────────────────────────────────────┘
+                   │
+                   ▼
+  ┌─────────────────────────────────────┐
+  │               Nginx                  │
+  │  - Serves static files directly      │
+  │  - Routes PHP requests to PHP-FPM    │
+  └─────────────────────────────────────┘
+                   │
+         PHP Request│
+                   ▼
+  ┌─────────────────────────────────────┐
+  │               PHP-FPM                │
+  │  - Executes PHP code                 │
+  │  - Communicates with MySQL           │
+  └─────────────────────────────────────┘
+                   │
+      SQL Queries  │
+                   ▼
+  ┌─────────────────────────────────────┐
+  │               MySQL                  │
+  │  - Stores and retrieves data         │
+  │  - Sends results to PHP-FPM          │
+  └─────────────────────────────────────┘
+                   │
+             HTML Output│
+                   ▼
+  ┌─────────────────────────────────────┐
+  │               Browser                │
+  │  - Displays rendered HTML            │
+  └─────────────────────────────────────┘
+```
 ## 🚀 Key Implementation Steps
 
 ### 1. Server Environment Setup (Linux)
