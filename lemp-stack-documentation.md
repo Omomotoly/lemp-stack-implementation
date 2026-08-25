@@ -153,7 +153,7 @@ Now that we have php components installed, we need to configure nginx to use the
 
 ## STEP 4: Configuring NGINX to use PHP Processor
 
-hile using Nginx webserver, we can create an NGINX server block that will make use of the above FPM pool. To do that, edit your NGINX configuration file and pass the path of pool’s socket file using the option fastcgi_pass inside location block for php.
+While using Nginx webserver, we can create an NGINX server block that will make use of the above FPM pool. To do that, edit your NGINX configuration file and pass the path of pool’s socket file using the option fastcgi_pass inside location block for php.
 
 1\. On Ubuntu 20.04, Nginx has on server block enabled by default in the /var/www/html directory. Instead of using the default directory, we will create our domain near this in /var/www/projectLEMP directory using the command;
 
@@ -270,7 +270,7 @@ The LEMP stack is now fully configured. In the next step, we’ll create a PHP s
 
 ##  Step 5: Testing PHP with Nginx
 
-At this point, our LAMP stack is completely installed and fully operational. we can test it to validate that Nginx can correctly hand .php files off to your PHP processor. We can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor:
+At this point, our LEMP stack is completely installed and fully operational. we can test it to validate that Nginx can correctly hand .php files off to your PHP processor. We can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor:
 
 
 ```
@@ -434,6 +434,7 @@ try {
  die();
 
 }
+```
 
 Save and close the file when you are done editing.
 
@@ -442,5 +443,4 @@ You can now access this page in your web browser by visiting the domain name or 
 ```
 http://<Public_domain_or_IP>/todo_list.php
 ```
-
 ![Screenshot](images/display-database.png)
